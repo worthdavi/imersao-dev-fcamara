@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <script src="js/main.js"></script>
+    
+    <title>FCamara</title>
+</head>
+<body>
+    <div class="container-top">
+        <div class="container-top-left-side">
+            <div class="container-top-left-side-centerized">
+                <div class="container-top-left-side-header">
+                    <h1>A FCamara está retornando ao presencial!</h1>
+                    <p>Depois de muitos desafios devido a pandemia do Covid-19, a FCamara está prestes a reabrir e voltar com os encontros presenciais. Entretanto, é importante ficar atento e cumprir
+                        com os cuidados necessários.</p>
+                </div>
+                <div class="container-top-left-side-list">
+                    <ul>
+                        <li>
+                            Os escritórios voltarão a ficar abertos no horário das 8h às 18h.
+                        </li>
+                        <li>
+                            É necessário agendar sua ida (formulário à direita) escolhendo para qual escritório ir, a data e também a estação de trabalho. 
+                        </li>
+                        <li>
+                            Será medida a temperatura ao chegar no escritório.
+                        </li>
+                        <li>
+                            Os escritórios só podem comportar até 40% dos consultores, conforme a legislação.
+                        </li>
+                        <li>
+                            Todos os consultores deverão usar máscaras dentro das acomodações dos escritórios.
+                        </li>
+                        <li>
+                            Nas mesas existem adesivos sinalizando onde os #SangueLaranjas devem sentar, para que haja o distanciamento necessário.
+                        </li>
+                        <li>
+                            Pessoas que estiverem sentindo algum sintoma não devem ir trabalhar presencialmente, a indicação é para que permaneçam em casa.
+                        </li>
+                    </ul>
+                </div> 
+            </div>         
+        </div>
+        <div class="container-top-right-side">
+            <div class="container-top-right-side-centerized">
+                <div class="container-top-right-side-header">
+                    <img src="images/logo.png"/>
+                    <h1>Escolha seu escritório:</h1>
+                </div>
+                <div class="container-top-right-side-form">
+                    <p>Escritório:</p>
+                    <select name="escritorios" id="escritorios">
+                        <option value="SaoPaulo">São Paulo</option>
+                        <option value="Santos">Santos</option>
+                    </select>
+                    <p>Data:</p><input type="date" id="data"/>
+                    <p>Estação:</p> <input type="number" id="estacao"/>
+                    <button onClick="Agendar()" type="submit">Enviar</button>
+                </div>
+                <div class="container-top-right-side-footer">
+                    <h1>Estamos esperando você :)</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-bottom">
+        <div class="container-bottom-text">
+            <img src="images/logo.png"/>
+            <p>Social Media</p>      
+        </div>
+        <div class="container-bottom-partners">
+            <ul>
+                <li>
+                    <a href="#"><img src="./images/partner1.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/partner2.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/partner3.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/partner2.png"/></a>
+                </li>
+            </ul>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+</body>
+</html>

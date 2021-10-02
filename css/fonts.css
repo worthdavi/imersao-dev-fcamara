@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Gratise';
+    src: url('../resources/fonts/Gratise.otf') format('embedded-opentype'), url('../resources/fonts/Gratise.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hug Me Tight';
+    src: url('../resources/fonts/Hug Me Tight.otf') format('embedded-opentype'), url('../resources/fonts/Hug Me Tight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
