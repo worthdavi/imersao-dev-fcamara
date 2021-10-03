@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <script src="js/main.js"></script>
-    
+   
+        <script src="js/main.js"></script>
+ <!--
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    -->
     <title>FCamara</title>
 </head>
 <body>
@@ -42,6 +45,9 @@
                         <li>
                             Pessoas que estiverem sentindo algum sintoma não devem ir trabalhar presencialmente, a indicação é para que permaneçam em casa.
                         </li>
+                        <li>
+                            Quem ainda não se sente à vontade para ir, ou mora fora das regiões onde estão os escritórios, <strong>irá permanecer em casa</strong>. Segurança em primeiro lugar!
+                        </li>
                     </ul>
                 </div> 
             </div>         
@@ -50,16 +56,16 @@
             <div class="container-top-right-side-centerized">
                 <div class="container-top-right-side-header">
                     <img src="images/logo.png"/>
-                    <h1>Escolha seu escritório:</h1>
+                    <h1>Agende seu escritório:</h1>
                 </div>
                 <div class="container-top-right-side-form">
                     <p>Escritório:</p>
                     <select name="escritorios" id="escritorios">
-                        <option value="SaoPaulo">São Paulo</option>
-                        <option value="Santos">Santos</option>
+                        <option value="SaoPaulo">São Paulo (sede)</option>
+                        <option value="Santos">Santos (filial)</option>
                     </select>
-                    <p>Data:</p><input type="date" id="data"/>
-                    <p>Estação:</p> <input type="number" id="estacao"/>
+                    <p>Data:</p><input type="date" id="data" required/>
+                    <p>Estação:</p> <input value="1" onKeyDown="return false" type="number" id="estacao" min="1" max="24" required/>
                     <button onClick="Agendar()" type="submit">Enviar</button>
                 </div>
                 <div class="container-top-right-side-footer">
