@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/emojis.css">
    
         <script src="js/main.js"></script>
- <!--
+    <!--
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     -->
     <title>FCamara</title>
@@ -16,47 +17,54 @@
 <body>
     <div class="container-top">
         <div class="container-top-left-side">
-            <div class="container-top-left-side-centerized">
-                <div class="container-top-left-side-header">
+            <div class="container-post">
+                <div class="container-post-header">
                     <h1>A FCamara está retornando ao presencial!</h1>
-                    <p>Depois de muitos desafios devido a pandemia do Covid-19, a FCamara está prestes a reabrir e voltar com os encontros presenciais. Entretanto, é importante ficar atento e cumprir
-                        com os cuidados necessários.</p>
+                    <div class="container-post-header-description">
+                        <p>Depois de muitos desafios devido a pandemia do Covid-19, a FCamara está prestes a reabrir e voltar com os encontros presenciais. Entretanto, é importante ficar atento e cumprir
+                            com os cuidados necessários.</p>
+                    </div>   
                 </div>
-                <div class="container-top-left-side-list">
-                    <ul>
-                        <li>
-                            Os escritórios voltarão a ficar abertos no horário das 8h às 18h.
-                        </li>
-                        <li>
-                            É necessário agendar sua ida (formulário à direita) escolhendo para qual escritório ir, a data e também a estação de trabalho. 
-                        </li>
-                        <li>
-                            Será medida a temperatura ao chegar no escritório.
-                        </li>
-                        <li>
-                            Os escritórios só podem comportar até 40% dos consultores, conforme a legislação.
-                        </li>
-                        <li>
-                            Todos os consultores deverão usar máscaras dentro das acomodações dos escritórios.
-                        </li>
-                        <li>
-                            Nas mesas existem adesivos sinalizando onde os #SangueLaranjas devem sentar, para que haja o distanciamento necessário.
-                        </li>
-                        <li>
-                            Pessoas que estiverem sentindo algum sintoma não devem ir trabalhar presencialmente, a indicação é para que permaneçam em casa.
-                        </li>
-                        <li>
-                            Quem ainda não se sente à vontade para ir, ou mora fora das regiões onde estão os escritórios, <strong>irá permanecer em casa</strong>. Segurança em primeiro lugar!
-                        </li>
-                    </ul>
-                </div> 
+                <div class="container-post-content">
+                    <div class="container-post-list">
+                        <ul>
+                            <li>
+                                Os escritórios abrirão às 8h e fecharão às 18h.
+                            </li>
+                            <li>
+                                É necessário agendar sua estação preechendo o formulário à direita.
+                            </li>
+                            <li>
+                                Será medida a temperatura dos nossos #SangueLaranjas será na entrada.
+                            </li>
+                            <li>
+                                Os escritórios só podem comportar até 40% dos consultores, conforme a legislação.
+                            </li>
+                            <li>
+                                É necessário o uso de máscara dentro das estações.
+                            </li>
+                            <li>
+                                Nas mesas existem adesivos sinalizando onde os #SangueLaranjas devem sentar, para que haja o distanciamento necessário.
+                            </li>
+                            <li>
+                                Pessoas que estiverem sentindo algum sintoma não devem ir trabalhar presencialmente, a indicação é para que permaneçam em casa.
+                            </li>
+                            <li>
+                                A volta ao presencial é <strong>opcional</strong>, portanto, quem não quiser voltar, irá permanecer <strong>em casa</strong>. Segurança em primeiro lugar!
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="container-top-left-side-author">
+                        <p>Author: <a href="https://github.com/worthdavi">worthdavi</a>, 05/10/2021</p>
+                    </div>
+                </div>
             </div>         
         </div>
         <div class="container-top-right-side">
             <div class="container-top-right-side-centerized">
                 <div class="container-top-right-side-header">
-                    <img src="images/logo.png"/>
-                    <h1>Agende seu escritório:</h1>
+                    <img src="images/logo_only.png"/>
+                    <h1>Agende sua estação:</h1>
                 </div>
                 <div class="container-top-right-side-form">
                     <p>Escritório:</p>
@@ -66,36 +74,23 @@
                     </select>
                     <p>Data:</p><input type="date" id="data" required/>
                     <p>Estação:</p> <input value="1" onKeyDown="return false" type="number" id="estacao" min="1" max="24" required/>
-                    <button onClick="Agendar()" type="submit">Enviar</button>
+                    <button onClick="Agendar()" type="submit">ENVIAR</button>
                 </div>
                 <div class="container-top-right-side-footer">
-                    <h1>Estamos esperando você :)</h1>
+                    <h1>Estamos esperando você! &#127818;</h1>
                 </div>
             </div>
         </div>
     </div>
     <div class="container-bottom">
-        <div class="container-bottom-text">
-            <img src="images/logo.png"/>
-            <p>Social Media</p>      
-        </div>
-        <div class="container-bottom-partners">
+        <div class="container-bottom-copyright">
+            <p>© 2021 FCamara Formação e Consultoria.</p>         
             <ul>
-                <li>
-                    <a href="#"><img src="./images/partner1.png"/></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/partner2.png"/></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/partner3.png"/></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/partner2.png"/></a>
-                </li>
-            </ul>
+                <li><a href="#">Facebook</a> |</li>
+                <li><a href="#">Instagram</a> |</li>
+                <li><a href="#">Discord</a></li>
+            </ul> 
         </div>
-        <div style="clear: both;"></div>
     </div>
 </body>
 </html>

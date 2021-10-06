@@ -12,7 +12,7 @@ body {
 .container-top {
     display: flex;
     background-color: green;
-    height: 85vh;
+    height: 90vh;
     width: 100vw;
 }
 
@@ -26,49 +26,73 @@ body {
     background-size: cover;
 }
 
-.container-top-left-side-centerized {   
-    background-color:rgb(236,123,39, 0.75);
-    padding: 2%;
-    border-radius: 15px 50px;
-    margin-top: 5%;
-    margin-left: 20%;
-    width: 60%;
-    height: 80%;
+.container-post-header {
+    width: 90%;
+    margin-top: 13%;
+    line-height: 60px;
+    padding: 1%;
+    border-radius: 0 10px 0 0;
+    background-color: rgba(239, 101, 60, 1);
+    /* rgba(48, 48, 51, 0.8) rgb(75, 79, 161, 0.8); */
 }
 
-
-.container-top-left-side-header > h1 {
-   font-family: Gratise;
-   font-size: 54px;
-   text-align: center;
-   color: white;
+.container-post-header h1 {
+    color: white;
+    font-family: 'Metropolis Black';
+    text-align: center;
+    font-size: 36px;
 }
 
-.container-top-left-side-header > p {
-    margin-top: 3%;
-    line-height: 30px; /* 4px +12px + 4px */
-    font-family: Arial, 'Times New Roman', Times, serif;
-    text-align: left;
-    text-justify: auto;
-    color: white;
- }
-
- .container-top-left-side-list {
-    margin-top: 5%;
-    margin-left: 5%;
-    color: white;
- }
-
- .container-top-left-side-list > ul {
+.container-post-header-description {
     width: 100%;
-    height: 100%;
-    list-style-image: url('../images/list-icon2.png');
+    line-height: 25px;
+    border-radius: 5px 5px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Metropolis Black';
+    text-align: justify;;
+}
+
+.container-post-content {   
+    font-family: 'Metropolis', Helvetica, sans-serif;
+    background-color:rgba(75, 79, 161, 1);
+    padding: 1%;
+    border-radius: 0 0 10px 0;
+    width: 90%;
+    height: 45%;
+}
+
+ .container-post-list {
+    margin-top: 1%;
+    color: white;
  }
 
- .container-top-left-side-list li {
+ .container-post-list > ul {
+    width: 100%;
+    height: 80%;
+    text-align: left;
+    list-style-type: "\1F34A";
+    list-style-position: inside;
+ }
+
+ .container-post-list li {
     line-height: 30px; /* 4px +12px + 4px */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
+ }
+
+ .container-top-left-side-author {
+    padding-left: 78%;
+    padding-top: 3%;
+ }
+
+ .container-top-left-side-author p {
+    font-size: 12px;
+    color: white;
+ }
+
+ .container-top-left-side-author a {
+    text-decoration: none;
+    color: rgba(239, 101, 60, 1);
  }
 
  /* Left side styles end */
@@ -78,8 +102,9 @@ body {
 .container-top-right-side {
     width: 50%;
     height: 100%;
-    background: url('../images/people-working.jpeg');
+    background: url('../images/people-working.jpeg'); 
     background-repeat: no-repeat;
+    background-color: white;
     background-size: cover;
 }
 
@@ -89,24 +114,24 @@ body {
     margin-top: 13%;
     margin-left: 30%;
     width: 40%;
-    height: 60%;
-    background-color: rgba(61, 97, 81, 0.542);
+    height: 58%;
+    background-color: rgb(75, 79, 161, 0.8);
 }
 
 .container-top-right-side-header {
     width: 100%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 .container-top-right-side-header img {
-    width: 60%;
-    margin-left: 20%;
+    margin-left: 40%;
+    padding-bottom: 3%;
 }
 
 .container-top-right-side-header h1 {
-    font-family: Hug Me Tight;
+    font-family: 'Metropolis Black';
     text-align: center;
-    color: rgb(236,123,39);
+    color: white;
     font-size: 26px;
 }
 
@@ -119,8 +144,8 @@ body {
 }
 
 .container-top-right-side-form p {
-    line-height: 30px;
-    font-family: Hug Me Tight;
+    line-height: 40px;
+    font-family: 'Metropolis Black';
     text-align: center;
     color:white;
     text-align: center;
@@ -128,6 +153,7 @@ body {
 
 .container-top-right-side-form input,
 .container-top-right-side-form select {
+    font-family: 'Metropolis';
     display: block;
     margin : 0 auto;
     border: none;
@@ -139,11 +165,19 @@ body {
 }
 
 .container-top-right-side-form button {
-    width: 25%;
+    width: 60%;
     height: 10%;
+    border-radius: 5px 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: block;
     margin: 0 auto;
-    margin-top: 15%;
+    background-color: rgb(75, 79, 161, 1);
+    color: white;
+    margin-top: 10%;
+}
+
+.container-top-right-side-form button:hover {
+    background-color: rgb(59, 62, 126);
 }
 
 .container-top-right-side-footer {
@@ -152,9 +186,9 @@ body {
 }
 
 .container-top-right-side-footer h1 {
-    font-family: Hug Me Tight;
+    font-family: 'Metropolis Black';
     text-align: center;
-    color: rgb(236,123,39);
+    color: white;
     font-size: 25px;
 }
 
@@ -162,48 +196,27 @@ body {
 
 
 .container-bottom {
-    background-color: white;
-    height: 15vh;
+    z-index: 999;
+    background-color: rgba(239, 101, 60, 1);
+    height: 10vh;
     width: 100vw;
 }
 
-.container-bottom-text {
-    float: left;
-    width: 20%;
-    height: 100%;
-    font-family: Hug Me Tight;
-    color:white;
+.container-bottom-copyright {
+    text-align: center;
+    color: white;
+    padding-top: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.container-bottom-text img {
-    width: 60%;
-    margin-left: 10%;
-    margin-top: 5%;
-}
-
-.container-bottom-text p {
-  font-size: 40px;
-  margin-left: 25%;
-  color: rgb(236,123,39);
-}
-
-.container-bottom-partners {
-    display: flex;
-    float: right;
-    width: 80%;
-    height: 100%;
-}
-
-.container-bottom-partners ul {
+.container-bottom-copyright ul {
     list-style: none;
 }
 
-.container-bottom-partners li {
-    margin-left: 70px;
+.container-bottom-copyright li {
     display: inline;
 }
-
-.container-bottom-partners img {
-    margin-top: 3%;
+.container-bottom-copyright a {
+    text-decoration: none;
+    color: white;
 }
-   

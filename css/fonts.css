@@ -11,3 +11,41 @@
     font-weight: normal;
     font-style: normal;
 }
+
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('../resources/fonts/Bebas Neue.otf') format('embedded-opentype'), url('../resources/fonts/Bebas Neue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis Light';
+    src: url("../resources/fonts/metropolis/Metropolis-Light.otf")
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../resources/fonts/metropolis/Metropolis-Regular.otf")
+}
+
+@font-face {
+    font-family: 'Metropolis Medium';
+    src: url("../resources/fonts/metropolis/Metropolis-Medium.otf")
+}
+
+@font-face {
+    font-family: 'Metropolis Bold';
+    src: url("../resources/fonts/metropolis/Metropolis-Bold.otf")
+}
+
+@font-face {
+    font-family: 'Metropolis ExtraBold';
+    src: url("../resources/fonts/metropolis/Metropolis-ExtraBold.otf")
+}
+
+@font-face {
+    font-family: 'Metropolis Black';
+    src: url("../resources/fonts/metropolis/Metropolis-Black.otf")
+}
