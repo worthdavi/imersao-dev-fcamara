@@ -164,6 +164,11 @@ body {
     background-color: rgba(173, 216, 230, 0.576);
 }
 
+input[type=number]::-webkit-inner-spin-button {  
+    width: 14px;
+    height: 30px;
+}
+
 .container-top-right-side-form button {
     width: 60%;
     height: 10%;
