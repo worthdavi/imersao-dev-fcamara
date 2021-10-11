@@ -1,21 +1,34 @@
 const Agendar = () => {
+    let errors = [];
     let data = document.getElementById("data").value
     let estacao = document.getElementById("estacao").value
+    let errorsList = document.getElementById("errors")
+    errorsList.innerText = "";
 
     if(!data || data == "")
-        return alert("A data deve estar preenchida.")
+        errors.push("A data deve estar preenchida.")
 
     let dateTime = new Date(data)
     let currentTime = new Date()
     if (dateTime < currentTime)
-        return alert("A data deve ser à partir de hoje.")
+        errors.push("A data deve ser à partir de hoje.")
 
 
     if(!estacao || estacao == "") 
-        return alert("É necessário especificar a estação.")        
+        errors.push("É necessário especificar a estação.")        
     else if (estacao <= 0)
-        return alert("É necessário ser um número maior que zero.")    
+        errors.push("É necessário ser um número maior que zero.")    
 
     let fullDate = `${dateTime.getDate() + 1}/${dateTime.getMonth() + 1}/${dateTime.getFullYear()}`
-    alert(`Seu escritório foi agendado com sucesso para o dia ${fullDate}, na estação ${estacao}!`)
+    if(errors.length < 1){
+        let li = document.createElement('li')
+        errorsList.innerHTML = "<li style='color: rgba(239, 101, 60, 1); font-weight: bold;'>Agendamento realizado coom sucesso!</li>"
+        errorsList.appendChild(li)
+    }else{
+        for(let i = 0; i < errors.length; i++){
+            let li = document.createElement('li')
+            li.innerText = errors[i]
+            errorsList.appendChild(li)
+        }
+    }        
 }

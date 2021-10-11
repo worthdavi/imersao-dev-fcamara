@@ -180,6 +180,14 @@ body {
     background-color: rgb(59, 62, 126);
 }
 
+#errors {
+    font-size: 15px;
+    color: red;
+    text-align: center;
+    list-style: none;
+    list-style-position: inside;
+}
+
 .container-top-right-side-footer {
     width: 100%;
     padding-top: 10%;
