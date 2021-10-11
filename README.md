@@ -1,6 +1,4 @@
 # Imersao Dev FCamara
 Landpage feita apenas com HTML, CSS e um pouco de Javascript só para o formulário.
 
-| ![Protótipo.jpg](https://i.imgur.com/iCPoyDQ.png) | 
-|:--:| 
-| *Protótipo* |
+https://worthdavi.github.io/imersao-dev-fcamara/
