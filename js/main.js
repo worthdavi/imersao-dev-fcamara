@@ -22,7 +22,7 @@ const Agendar = () => {
     let fullDate = `${dateTime.getDate() + 1}/${dateTime.getMonth() + 1}/${dateTime.getFullYear()}`
     if(errors.length < 1){
         let li = document.createElement('li')
-        errorsList.innerHTML = "<li style='color: rgba(239, 101, 60, 1); font-weight: bold;'>Agendamento realizado coom sucesso!</li>"
+        errorsList.innerHTML = `<li style='color: rgba(239, 101, 60, 1); font-weight: bold;'>Agendamento realizado para: ${fullDate}!</li>`
         errorsList.appendChild(li)
     }else{
         for(let i = 0; i < errors.length; i++){

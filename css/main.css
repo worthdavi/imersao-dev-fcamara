@@ -181,7 +181,9 @@ body {
 }
 
 #errors {
+    margin-top: 5px;
     font-size: 15px;
+    font-family: "Metropolis";
     color: red;
     text-align: center;
     list-style: none;
