@@ -3,11 +3,6 @@
     padding: 0px;
 }
 
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-
 
 .container-top {
     display: flex;
@@ -59,7 +54,7 @@ body {
     padding: 1%;
     border-radius: 0 0 10px 0;
     width: 90%;
-    height: 45%;
+    height: 45%;    
 }
 
  .container-post-list {
